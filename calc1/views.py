@@ -10,12 +10,7 @@ def home(request):
 
 def add(request):
 
-<<<<<<< HEAD
-     val1=request.POST['num1'] 
-     val2=request.POST['num2']
-=======
-     val1=int(request.POST['num1'])
-     val2=int(request.POST['num2'])
->>>>>>> 1548960f2b70a08da2f56a4c6e8afe877aff7411
+     val1=int(request.GET['num1']) 
+     val2=int(request.GET['num2'])
      res=val1+val2
      return render(request,'result.html',{'result':res})   
