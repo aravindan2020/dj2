@@ -318,14 +318,16 @@
 	
 	
 	<div class="row">
-		{%for e in d%}		
+		{%for e in d%}	
+		{%if e.sel%}
 		<div class="col-md-4 about-us-box wow fadeInUp animated">				
-			<div class="about-us-photo">				
+			<div class="about-us-photo">								
 			<img src="{{baseurl}}/{{e.img}}" alt="cc">
-		    </div>
-		    <h3>{{e.name}}</h3>
+			</div>
+		     <h3>{{e.name}}</h3>
 			<p>{{e.desc}}</p>
 		</div>
+		{%endif%}
 		{%endfor%}
 		</div><!-- End row -->
 		
