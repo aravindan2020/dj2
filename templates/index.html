@@ -50,7 +50,7 @@
         <li><a href="#Price">Price</a></li>
         <li><a href="#About">About</a></li>
         <li><a href="#Testimonial">Testimonial</a></li>
-        <li><a href="#">Button</a></li>
+        <li><a href="acc/register"></a>register</a></li>
       </ul>
     </div><!-- End navbar-collapse -->
   </div><!-- End container -->
@@ -319,15 +319,13 @@
 	
 	<div class="row">
 		{%for e in d%}	
-		{%if e.sel%}
 		<div class="col-md-4 about-us-box wow fadeInUp animated">				
 			<div class="about-us-photo">								
-			<img src="{{baseurl}}/{{e.img}}" alt="cc">
+			<img src="{{e.img.url}}" alt="cc">
 			</div>
 		     <h3>{{e.name}}</h3>
 			<p>{{e.desc}}</p>
 		</div>
-		{%endif%}
 		{%endfor%}
 		</div><!-- End row -->
 		
